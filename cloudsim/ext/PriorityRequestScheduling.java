@@ -7,22 +7,6 @@ import java.util.Random;
 
 import gridsim.GridSim;
 
-/*
- * Get the list of all the requests.
- * Assign priority to the requests randomly 
- * also assign deadline time for the tasks. It will be greater than the current time
- * calculate the total delay allowed by the request
- * when we change the size of the data, we can schedule the data which is of higher data size
- * calculate the priority by checking the allowed deadline-the total delay for the task. 
- * then assign the tasks to one of three queues and send them for processing 
- * 
- * check the code for userbase internetcloudlet. it stores the id, and other info. userbase also has a provision to check the processing time. 
- * I definitely need to get the algo working for a cloudlet. as that is getting processed. it also is giving processing time. hence, priority can be set. 
- * 
- * I can make a static list here and get the data from the userbase class. I will need the id and processing time. getdata("procTime") can be used to get processing time.  
- */
-
-
 public class PriorityRequestScheduling {
 
 	public static List<requestInfo> reqinfo = new ArrayList<requestInfo>();
